@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const configs = require('./config.json');
 
 client.on('message', async(message) => {
-//DON'T FORGET async STATEMENT
+//DON'T FORGET async STATEMENT for asynchronous functions
   var args = message.content.slice(configs.prefix.length).trim().split(' ');
   const commandName = args.shift();
   
