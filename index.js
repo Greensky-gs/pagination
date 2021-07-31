@@ -43,3 +43,7 @@ client.on('message', async(message) => {
     });
   };
 });
+
+client.login(configs.token).catch((error) => {
+  throw error;
+});
